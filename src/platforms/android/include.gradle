@@ -15,7 +15,7 @@ dependencies {
     def supportVer = project.hasProperty("supportVersion") ? supportVersion : "25.1.0";
 
     compile "com.android.support:appcompat-v7:$supportVer"
-    compile "com.google.firebase:firebase-messaging:$firebaseMessagingVersion"
+    compile group: 'com.google.firebase', name: 'firebase-messaging', version: '17.0.0'
     compile "com.android.support:multidex:1.0.1"
 }
 
